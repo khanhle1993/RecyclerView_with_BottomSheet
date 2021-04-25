@@ -1,60 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_margin="10dp"
-    android:padding="16dp"
+    android:background="@android:color/transparent"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="Title"
-        android:textColor="#000"
-        android:id="@+id/text_title_bottom_sheet"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Date"
-        android:layout_below="@+id/text_title_bottom_sheet"
-        android:id="@+id/text_date_bottom_sheet"
-        android:textSize="13sp" />
-
-    <ImageView
-        android:id="@+id/img_close_bottom_sheet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/ic_close"/>
-
-    <TextView
-        android:id="@+id/text_lorem"
-        android:layout_marginTop="20dp"
-        android:textColor="#000"
-        android:textSize="14sp"
-        android:layout_below="@+id/text_date_bottom_sheet"
-        android:text="@string/lorem"
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/border_of_bottom_sheet"
+        android:padding="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="300dp">
 
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/text_lorem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Title"
+            android:textColor="#000"
+            android:id="@+id/text_title_bottom_sheet"
+            android:textStyle="bold"/>
 
-    <Button
-        android:foreground="@drawable/ripple_effect"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/ratingBar"
-        android:id="@+id/button_submit_rating"
-        android:textColor="#FFF"
-        android:text="Submit rating"
-        android:background="@drawable/custom_buttom_submit"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_below="@+id/text_title_bottom_sheet"
+            android:id="@+id/text_date_bottom_sheet"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/img_close_bottom_sheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_close"/>
+
+        <TextView
+            android:id="@+id/text_lorem"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:layout_below="@+id/text_date_bottom_sheet"
+            android:text="@string/lorem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/text_lorem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:foreground="@drawable/ripple_effect"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/ratingBar"
+            android:id="@+id/button_submit_rating"
+            android:textColor="#FFF"
+            android:text="Submit rating"
+            android:background="@drawable/custom_buttom_submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+
 
 </RelativeLayout>
